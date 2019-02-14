@@ -1,0 +1,17 @@
+<h1>Editing Book</h1>
+
+<%= form_for(@blog) do |f| %>
+<h3> Title</h3>
+<%= f.text_field :title %>
+
+<h3> Body</h3>
+<%= f.text_field :body %>
+
+<%= f.submit 'Update' %>
+
+<%= link_to "show", blog_path(@blog) %>
+<%= link_to "Back", new_blog_path(@blog) %>
+<% end %>
+
+
+
