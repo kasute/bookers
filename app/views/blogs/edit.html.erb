@@ -2,15 +2,15 @@
 
 <%= form_for(@blog) do |f| %>
 <h3> Title</h3>
-<%= f.text_field :title %>
+<%= f.text_field :title,class:"book_title" %>
 
 <h3> Body</h3>
-<%= f.text_field :body %>
+<%= f.text_field :body,class:"book_body" %>
 
 <%= f.submit 'Update' %>
 
-<%= link_to "show", blog_path(@blog) %>
-<%= link_to "Back", new_blog_path(@blog) %>
+<%= link_to "show", blog_path(@blog),class:"show_(@blog)" %>
+<%= link_to "Back", new_blog_path(@blog),class:"back" %>
 <% end %>
 
 
