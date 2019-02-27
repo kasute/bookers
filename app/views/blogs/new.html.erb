@@ -22,9 +22,9 @@
         <%= blog.body %>
        </td>
        <td>
-        <%= link_to "show",blog_path(blog.id),class:	"show_{blog.id}" %>
-        <%= link_to "edit", edit_blog_path(blog.id),class: "edit_{blog.id}"	 %>
-        <%= link_to "delete",blog_path(blog.id), method: :delete, data: {confirm: "Are you sure ?"},class:"destroy_{blog.id}" %>
+        <%= link_to "show",blog_path(blog.id),class:	"show_#{blog.id}" %>
+        <%= link_to "edit", edit_blog_path(blog.id),class: "edit_#{blog.id}"	 %>
+        <%= link_to "delete",blog_path(blog.id), method: :delete, data: {confirm: "Are you sure ?"},class:"destroy_#{blog.id}" %>
        </td>
         <% end %>
       </tr>

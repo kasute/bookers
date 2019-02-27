@@ -9,7 +9,7 @@
 
 <%= f.submit 'Update' %>
 
-<%= link_to "show", blog_path(@blog),class:"show_(@blog)" %>
+<%= link_to "show", blog_path(@blog),class:"show_#{@blog.id}" %>
 <%= link_to "Back", new_blog_path(@blog),class:"back" %>
 <% end %>
 
